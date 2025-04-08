@@ -326,11 +326,11 @@ function Diy_checkout() {
     THEME_BRANCH="Theme1"
   fi
 
-  # {
-  #   echo "src-git danshui https://github.com/281677160/openwrt-package.git;$SOURCE"
-  #   echo "src-git dstheme https://github.com/281677160/openwrt-package.git;$THEME_BRANCH"
-  #   echo "src-git OpenClash https://github.com/vernesong/OpenClash.git;$CLASH_BRANCH"
-  # } >>"${HOME_PATH}"/feeds.conf.default
+  {
+    echo "src-git luci https://github.com/immortalwrt/luci.git;master"
+    # echo "src-git dstheme https://github.com/281677160/openwrt-package.git;$THEME_BRANCH"
+    # echo "src-git OpenClash https://github.com/vernesong/OpenClash.git;$CLASH_BRANCH"
+  } >>"${HOME_PATH}"/feeds.conf.default
 
   # 增加中文语言包
   A_PATH="$HOME_PATH/package"
